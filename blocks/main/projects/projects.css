@@ -1,0 +1,97 @@
+.projects__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 160px);
+    gap: 20px;
+}
+
+.projects__item {
+    position: relative;
+    border: var(--color-border-card);
+    border-radius: var(--card-radius);
+    background: url("../../../pictures/img/card1.jpg") no-repeat center / cover;
+    z-index: 0;
+}
+
+.projects__item:nth-child(2) {
+    background-image: url("../../../pictures/img/card2.jpg");
+}
+.projects__item:nth-child(3) {
+    background-image: url("../../../pictures/img/card3.jpg");
+}
+.projects__item:nth-child(4) {
+    background-image: url("../../../pictures/img/card4.jpg");
+}
+.projects__item:nth-child(5) {
+    background-image: url("../../../pictures/img/card5.jpg");
+}
+.projects__item:nth-child(6) {
+    background-image: url("../../../pictures/img/card6.jpg");
+}
+
+.projects__item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(27, 27, 27, 0.4);
+    z-index: -1;
+    border-radius: var(--card-radius);
+}
+
+.projects__card {
+    padding: var(--padding-main);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects__header {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects__header_small {
+    width: 190px;
+}
+
+.projects__header span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.projects__title {
+    font-family: "Inter-Bold";
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.long {
+    grid-row: span 3;
+}
+
+@media (max-width: 720px) {
+    .projects__list {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(12, 160px);
+    }
+    .big {
+        grid-column: span 1;
+    }
+    .long {
+        grid-row: span 2;
+    }
+}

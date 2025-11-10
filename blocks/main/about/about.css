@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+}
+
+@media (max-width: 720px) {
+    .about__info {
+        margin-block-end: var(--gap-section);
+    }
+}

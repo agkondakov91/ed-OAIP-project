@@ -1,0 +1,19 @@
+.button {
+    padding: 14px;
+    background-color: var(--color-accent-dark);
+    color: white;
+    border-radius: var(--border-radius);
+}
+
+.button-card {
+    color: var(--color-text);
+    background-color: white;
+    width: max-content;
+    transition: all 0.3s ease;
+}
+
+.button-card:hover {
+    color: white;
+    background-color: var(--color-accent-dark);
+    transform: translateY(-3px);
+} 

@@ -1,0 +1,15 @@
+.decor {
+    position: absolute;
+    width: 454px;
+    height: 327px;
+    background-image: url("../../../pictures/svg/line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 720px) {
+    .decor {
+        width: 316px;
+        height: 227px;
+    }
+}

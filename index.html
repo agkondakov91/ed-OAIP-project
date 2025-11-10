@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, вёрстка" />
+    <meta name="description" content="Итоговая работа по курсу html/css" />
+    <meta name="author" content="Александр Кондаков" />
+    <link rel="stylesheet" href="./pages/styles.css" />
+    <link rel="icon" href="./pictures/svg/favicon.svg" type="image/svg+xml" />
+    <title>Web Developer</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="wrapper">
+        <button class="theme" aria-label="Переключить тему">🌙 theme</button>
+        <nav>
+          <ul class="header__list">
+            <li class="header__list-item"><a href="#about">About Me</a></li>
+            <li class="header__list-item"><a href="#skills">Skills</a></li>
+            <li class="header__list-item"><a href="#projects">Projects</a></li>
+            <li class="header__list-item">
+              <a href="#experience">Experience</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#contacts" class="button">contact</a>
+      </div>
+    </header>
+    <header class="header-small">
+      <button class="theme" aria-label="Переключить тему">🌙 theme</button>
+      <button>
+        <img src="./pictures/svg/header.svg" alt="" />
+      </button>
+    </header>
+    <main class="main" id="main">
+      <div class="scroll">
+        <p class="scroll__text">scroll down</p>
+        <div class="scroll__line"></div>
+      </div>
+      <section class="about" id="about">
+        <div class="wrapper">
+          <div class="about__info">
+            <header class="main__header">
+              <h1 class="main__header-title">
+                Hi, <span>I'm John</span>, a beginner web developer.
+              </h1>
+              <p class="main__caption">About me</p>
+              <p class="main__paragraph">
+                Since 2025, I have been passionate about web technologies,
+                studying at an IT college and studying all modern trends and
+                directions of development of the web industry.
+              </p>
+            </header>
+            <div class="main__contacts">
+              <p>Check out my</p>
+              <ul class="main__contacts-list">
+                <li>
+                  <a href="#" class="main__icon"
+                    ><img src="./pictures/svg/git.svg" alt="icon github"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="main__icon"
+                    ><img src="./pictures/svg/tg.svg" alt="icon telegram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="main__icon"
+                    ><img src="./pictures/svg/in.svg" alt="icon in"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__picture">
+            <div class="decor"></div>
+            <figure>
+              <div class="box-wrapper">
+                <img
+                  src="./pictures/img/man.jpg"
+                  alt="a man in black glasses"
+                  class="picture"
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="skills main__centered" id="skills">
+        <div class="wrapper wrapper-center">
+          <header class="main__header">
+            <h2 class="main__header-title center">My Skills</h2>
+            <p class="main__caption center">skills</p>
+            <p class="main__paragraph center">
+              I am constantly learning and developing, expanding my professional
+              and social skills.
+            </p>
+          </header>
+        </div>
+        <div class="wrapper wrapper-center">
+          <ul class="skills__program-list">
+            <li class="skills__program-item">HTML</li>
+            <li class="skills__program-item">CSS</li>
+            <li class="skills__program-item">JavaScript</li>
+            <li class="skills__program-item">VS Code</li>
+            <li class="skills__program-item">GIT</li>
+            <li class="skills__program-item">DevTools</li>
+            <li class="skills__program-item">Figma</li>
+            <li class="skills__program-item">Postman</li>
+            <li class="skills__program-item">TypeScript</li>
+            <li class="skills__program-item">React</li>
+            <li class="skills__program-item">Redux Toolkit</li>
+            <li class="skills__program-item">SQL</li>
+            <li class="skills__program-item">Webpack</li>
+            <li class="skills__program-item">Vite</li>
+            <li class="skills__program-item">Node.js</li>
+            <li class="skills__program-item">Python</li>
+            <li class="skills__program-item">REST API</li>
+          </ul>
+          <div class="skills__develop">
+            <h3 class="skills__title">Developer Skills</h3>
+            <ul class="skills__dev-list">
+              <li class="skills__dev-item">
+                <p>HTML5</p>
+              </li>
+              <li class="skills__dev-item">
+                <p>CSS3</p>
+              </li>
+              <li class="skills__dev-item">
+                <p>JavaScript</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="wrapper wrapper-left">
+          <header class="main__header">
+            <h2 class="main__header-title">My Portfolio</h2>
+            <p class="main__caption">Projects</p>
+            <p class="main__paragraph">
+              My best works during my studies and participation in open web
+              community projects.
+            </p>
+          </header>
+          <ul class="projects__list">
+            <li class="projects__item big">
+              <article class="projects__card">
+                <header class="projects__header">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool two-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+            <li class="projects__item long">
+              <article class="projects__card">
+                <header class="projects__header projects__header_small">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool three-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+            <li class="projects__item long">
+              <article class="projects__card">
+                <header class="projects__header projects__header_small">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool three-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+            <li class="projects__item long">
+              <article class="projects__card">
+                <header class="projects__header projects__header_small">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool three-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+            <li class="projects__item long">
+              <article class="projects__card">
+                <header class="projects__header projects__header_small">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool three-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+            <li class="projects__item big">
+              <article class="projects__card">
+                <header class="projects__header">
+                  <span>category</span>
+                  <h3 class="projects__title">Cool two-line headline</h3>
+                </header>
+                <button class="button button-card">read more</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="experience main__centered" id="experience">
+        <div class="wrapper wrapper-center">
+          <header class="main__header">
+            <h2 class="main__header-title center">Experience</h2>
+            <p class="main__caption center">experience</p>
+            <p class="main__paragraph center">
+              My professional journey in learning and self-development as a
+              beginner web engineer.
+            </p>
+          </header>
+        </div>
+        <ul class="experience__list">
+          <li>
+            <article class="experience__item">
+              <header>
+                <h3 class="experience__title">Some Experience 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in suscipit mi. Interdum et malesuada fames ac ante
+                  ipsum primis in faucibus.
+                </p>
+              </header>
+              <p class="experience__date">2023</p>
+            </article>
+          </li>
+          <li>
+            <article class="experience__item">
+              <header>
+                <h3 class="experience__title">Some Experience 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in suscipit mi. Interdum et malesuada fames ac ante
+                  ipsum primis in faucibus.
+                </p>
+              </header>
+              <p class="experience__date">2024</p>
+            </article>
+          </li>
+          <li>
+            <article class="experience__item">
+              <header>
+                <h3 class="experience__title">Some Experience 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in suscipit mi. Interdum et malesuada fames ac ante
+                  ipsum primis in faucibus.
+                </p>
+              </header>
+              <p class="experience__date">2025</p>
+            </article>
+          </li>
+          <li>
+            <article class="experience__item">
+              <header>
+                <h3 class="experience__title">Some Experience 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in suscipit mi. Interdum et malesuada fames ac ante
+                  ipsum primis in faucibus.
+                </p>
+              </header>
+              <p class="experience__date">2026</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="wrapper wrapper-left">
+          <header class="main__header">
+            <h2 class="main__header-title">Contact With Me</h2>
+            <p class="main__caption">Contacts</p>
+            <p class="main__paragraph">
+              If you are interested in cooperation, I will be glad to receive
+              your proposals and work on joint projects.
+            </p>
+          </header>
+          <div class="wrapper contacts__wrapper">
+            <aside aria-label="Contacts">
+              <ul class="contacts__list">
+                <li>
+                  <h3 class="contacts__title">Location</h3>
+                  <address>Moscow, Russia</address>
+                </li>
+                <li>
+                  <h3 class="contacts__title">Email</h3>
+                  <p><a href="mailto:john@example.com">john@example.com</a></p>
+                </li>
+                <li>
+                  <h3 class="contacts__title">Phone</h3>
+                  <p><a href="tel:+79871234560">+7 987 123-45-60</a></p>
+                </li>
+              </ul>
+            </aside>
+            <form class="contacts__form">
+              <fieldset class="contacts__form-group">
+                <div class="contacts__form-wrapper">
+                  <label for="name" class="contacts__form-lb">You Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    minlength="3"
+                    class="contacts__form-input"
+                    placeholder="Please introduce yourself"
+                    required
+                    autofocus
+                  />
+                  <span class="contacts__form-val"
+                    >Minimum number of characters - 3</span
+                  >
+                </div>
+                <div class="contacts__form-wrapper">
+                  <label for="email" class="contacts__form-lb"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="contacts__form-input"
+                    placeholder="Please enter your email address"
+                    required
+                  />
+                  <span class="contacts__form-val"
+                    >Minimum number of characters - 3</span
+                  >
+                </div>
+              </fieldset>
+              <div class="contacts__form-wrapper">
+                <label for="message" class="contacts__form-lb">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="contacts__form-input form-textarea"
+                  rows="3"
+                  cols="50"
+                  placeholder="Please enter your message"
+                ></textarea>
+              </div>
+              <footer class="contacts__footer">
+                <button type="submit" class="button">submit</button>
+                <p>
+                  By clicking the submit button You confirm my consent to the
+                  processing of <a href="#">personal data</a>
+                </p>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper wrapper-center wrapper-col">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#about">About Me</a></li>
+          <li class="footer__item"><a href="#skills">Skills</a></li>
+          <li class="footer__item"><a href="#projects">Projects</a></li>
+          <li class="footer__item"><a href="#experience">Experience</a></li>
+        </ul>
+        <h3 class="footer__title center">2025-2026 It Hexlet</h3>
+        <p class="footer__subtitle center">
+          This project is a practical project for mastering the structure and
+          style of a web page.
+        </p>
+        <a href="#body" class="footer__link center">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>

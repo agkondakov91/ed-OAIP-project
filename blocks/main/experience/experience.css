@@ -1,0 +1,35 @@
+.experience__list {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.experience__item {
+    padding: var(--padding-main) var(--padding-main) 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 1px solid var(--color-light-dark);
+    border-radius: var(--border-radius);
+}
+
+.experience__title {
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-block-end: 10px;
+}
+
+.experience__item header {
+    max-width: 430px;
+}
+
+.experience__date {
+    font-family: "Inter-Bold";
+    font-size: 100px;
+    line-height: 120%;
+    color: var(--color-date);
+}

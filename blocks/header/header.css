@@ -1,0 +1,59 @@
+@import url("./wrapper.css");
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    background-color: var(--color-light);
+    z-index: 100;
+}
+
+.header-small {
+    padding: 20px;
+    display: none;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--color-light);
+    z-index: 100;
+}
+
+.theme {
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.theme:hover {
+    color: var(--color-accent-dark);
+    transform: translateY(-3px);
+}
+
+.header__list {
+    display: flex;
+    gap: var(--padding-main);
+}
+
+.header__list a {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.header__list a:hover {
+    color: var(--color-accent-dark);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 720px) {
+    .header {
+        display: none;
+    }
+
+    .header-small {
+        display: flex;
+    }
+}

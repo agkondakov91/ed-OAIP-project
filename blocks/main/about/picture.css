@@ -1,0 +1,12 @@
+@keyframes rotatePicture {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: -180deg;
+    }
+}
+
+.picture {
+    animation: rotatePicture 15s ease-in-out infinite;
+}

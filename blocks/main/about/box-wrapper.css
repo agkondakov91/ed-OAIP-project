@@ -1,0 +1,25 @@
+@keyframes rotateBox {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 180deg;
+    }
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50px;
+    animation: rotateBox 15s ease-in-out infinite;
+}
+
+@media (max-width: 720px) {
+    .box-wrapper {
+        width: 250px;
+    }
+}

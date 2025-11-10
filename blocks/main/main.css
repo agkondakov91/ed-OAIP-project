@@ -1,0 +1,102 @@
+@import url("./scroll/scroll.css");
+@import url("./about/about.css");
+@import url("./about/decor.css");
+@import url("./about/box-wrapper.css");
+@import url("./about/picture.css");
+@import url("./center/center.css");
+@import url("./skills/skills.css");
+@import url("./experience/experience.css");
+@import url("./projects/projects.css");
+@import url("./contacts/contacts.css");
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-section);
+}
+
+.main__header {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+}
+
+.main__caption {
+    order: -1;
+    margin-block-end: var(--padding-main);
+    color: var(--color-light-dark);
+    font-size: 14px;
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+}
+
+.main__header-title {
+    margin-block-end: 20px;
+    font-family: "Inter-Bold";
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.main__header-title span {
+    color: var(--color-accent-dark);
+}
+
+.main__contacts {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-main);
+}
+
+.main__contacts p {
+    font-family: "Inter-Bold";
+    font-size: 14px;
+}
+
+.main__contacts-list {
+    display: flex;
+    gap: 16px;
+}
+
+.main__icon {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--color-light-dark);
+    border-radius: 7px;
+    background-color: var(--color-icon-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main__icon:hover {
+    transform: translateY(-3px);
+}
+
+.main__icon img {
+    width: 20px;
+}
+
+.main__centered {
+    padding-block: var(--gap-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-accent-light);
+}
+
+@media (max-width: 720px) {
+    .main__header {
+        margin-block-end: var(--padding-main);
+        max-width: 100%;
+    }
+    .main__header-title {
+        width: 100%;
+    }
+    .main__contacts{
+        justify-content: space-between;
+    }
+    .main__contacts-list {
+        gap: 5px;
+    }
+}
